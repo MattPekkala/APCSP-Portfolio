@@ -7,11 +7,12 @@ import './style.css'
 
 
 // We can import raw code fragments for samples, like this:
-import fragment from './code-fragments/fragment.js?raw'
-document.querySelector('#fragment').textContent = fragment;
 
-import importExample from './code-fragments/importExample.sh?raw'
-document.querySelector('#importExample').textContent = importExample;
+import binaryExample from './code-fragments/binaryExample.sh?raw'
+document.querySelector('#binaryExample').textContent = binaryExample;
+
+import readchoiceExample from './code-fragments/readchoiceExample.sh?raw'
+document.querySelector('#readchoiceExample').textContent = readchoiceExample;
 
 // A code highlighter
 import hljs from 'highlight.js'
