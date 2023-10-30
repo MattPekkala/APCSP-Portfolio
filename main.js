@@ -14,6 +14,15 @@ document.querySelector('#binaryExample').textContent = binaryExample;
 import readchoiceExample from './code-fragments/readchoiceExample.sh?raw'
 document.querySelector('#readchoiceExample').textContent = readchoiceExample;
 
+import htmlExample from './code-fragments/htmlExample.sh?raw'
+document.querySelector('#htmlExample').textContent = htmlExample;
+
+import cssExample from './code-fragments/cssExample.sh?raw'
+document.querySelector('#cssExample').textContent = cssExample;
+
+import jsExample from './code-fragments/jsExample.sh?raw'
+document.querySelector('#jsExample').textContent = jsExample;
+
 // A code highlighter
 import hljs from 'highlight.js'
 // You can check the folder for other themes!
