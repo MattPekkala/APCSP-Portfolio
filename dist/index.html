@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>APCSP Portfolio</title>
+    <script type="module" crossorigin src="/assets/index-e9930b90.js"></script>
+    <link rel="stylesheet" href="/assets/index-3225629e.css">
+  </head>
+  <body>
+    <main class="container">
+      <nav>
+        <h2>Matt Pekkala</h2>
+        <ul>
+          <li>
+            <a href="#about">About Me</a>
+          </li>
+          <li>
+            <a href="#projects">My Projects</a>
+          </li>
+        </ul>
+      </nav>
+      <h1>Welcome to My APCSP Portfolio!</h1>
+      <p>In this portfolio I will explain what this class is about and the projects we have done.</p>
+      
+      <h2>But First, Some General Information</h2>
+      <h3 id="about">About Me</h3>
+      <p>I am currently a Junior at IACS, and though I don't know exactly what I want to do, I know I am interested in Computer Science, specifically Graphics and Visual Computing. I hope to go to a good Engineering School, such as UMass Amherst or BU. </p>
+      <article>
+        <header>Umass Amherst</header>
+        <div>
+          <img src="umass.jpeg">
+        </div>
+        <footer>
+          By <a href="https://commons.wikimedia.org/wiki/File:Arnold_House,_School_of_Public_Health_and_Health_Sciences,_UMass,_Amherst_MA.jpg">John Phelan</a> under a <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.en">CC By-SA 3.0 License</a>
+        </footer>
+          </article>
+      <article>
+        <header>Boston University</header>
+        <div>
+          <img src="bu.jpeg">
+        </div>
+        <footer>
+          By <a href="https://commons.wikimedia.org/wiki/File:Boston_University_scene_-_DSC03050.JPG">Daderot</a> under a <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.en">CC0 1.0 License</a>
+        </footer>
+          </article>
+      
+    <h2>Lets Get Into the Meat and Potatoes </h2>
+    <h3 id="projects">My Projects!</h3>
+      <nav>
+        <ul>
+          <li>
+            <a href="#binary">Binary Search Game</a>
+          </li>
+          <li>
+            <a href="#portfolio">APCSP Portfolio</a>
+          </li>
+        </ul>
+      </nav>
+      
+        <h4 id="binary">Binary Search Game</h4> 
+    <p>In this project, we made a text based game in JS based on <u>Binary Search.</u> We played a game in class to understand the concept and drew out the algorithm for our game with a flow chart. My group chose to make a game where the program would guess the US state that the user thought of. The program would ask the user questions about geography and position of the state relative to other states or geographic features of the US. We collaborated on this project by using <u>Pair Programming.</u> We learned about <u>Boolean Expressions and Selection Conditionals</u> to help with the searching process. This project also made us learn a lot about <u>Identifying and Correcting Errors.</u></p>
+      <p><u>Binary Search</u> is the concept of dividing the amount of items in a list by two until there is only one possibility for what the item could be. What that means to my group's game and the user interface is that the program asks the user yes or no questions in relation to the state they chose, utilizing readyesorno functions. The user would write yes or no depending on how the question related to their state. <u>Boolean Expressions</u> are used to make the program function differently depending on if the user wrote yes or no. You set a variable to something related to the question. In simple terms, you use if statements and else statements. If statements are used when the user answers yes, the boolean expression is if the variable = true, then do this. Else statements have no boolean expression, because you can assume the variable = false, so so you tell the program to do something differently compared to if the variable is true. <u>Selective Conditionals</u> are functions we used when we needed to divide by 3 or 4. For those cases we would use a readchoice function to choose between different terms assigned to a number. The user would write the number that stood for the term that was correct to the state they chose. <u>Pair Programming</u> is a collaboration method used for writing code. The model for three people in a group is one person actually writing the code, one person supervising the code writer to check for errors, and one person mapping out the path of the code with a flow chart. Our group used <u>Identifying and Correcting Errors</u> when we had written the entire code, and we were testing to make sure the game worked, by testing inputs to see if the game guessed the correct state. When we noticed an error we went to the part of the code where the error occurred and tried to notice if there was something wrong with the code. When we found the error and fixed it, then we checked the game in that spot again to make sure it was fixed.</p>
+      <h3>Here is an example of binary search in our code</h3>
+      <pre>
+        <code id="binaryExample" lang="sh"></code>
+      </pre>
+      <h3>Here is an example of using a readchoice function in our code</h3>
+      <pre>
+        <code id="readchoiceExample" lang="sh"></code>
+      </pre>
+      <h3>Try the game out yourself!</h3>
+      <a target="_blank" href="https://stateguesser.netlify.app/">State Guesser</a>
+      <h4 id="portfolio">APCSP Portfolio</h4>
+
+      <p>This project is a portfolio used to showcase our work done in this class. It's also to explain what this class is about. We learned a lot about the <u>Design Process</u> of making a website, and user interface. We learned about <u>Hosting and the Internet</u> with how our website needs a server to be seen by anyone. We learned about the languages <u>HTML and CSS</u> and how they are used in the making of a webpage. We also learned about <u>Researching and Using Libraries</u> to enhance our webpages. This project really challenged my ability to use all three languages to make my portfolio exactly as I want it to be.</p>
+
+      <p><u>Design Process</u> was used when we wanted to plan out how we would implement certain elements into our webpage, and setting SMART goals for the work that we would do on work days. <u>Hosting and the Internet</u> is about hosting your website on a hosting server so it can be viewed on the internet. The hosting server we used is Netlify. We needed to host our source code to a code repository to document changes made to the code and save it in case something goes wrong. The code repository we used in Github.<u>HTML</u> is the language used to get the basic layout of the webpage, making elements and implementing other media where they are meant to go, and putting links. <u>CSS</u> is the language used to make the page look exactly how you want it to. You can take the elements defined in HTML and change things about them, like color, size, adding borders, etc. <u>JS</u> is the language used to make everything work, like menus, downloading libraries, importing media to be put into links, etc. <u>Researching and Using Libraries</u> was not used by me, because I ran out of time. I tried to researching libraries, but I didn't get very far. Libraries are pre coded sections of code that are used to implement difficult things into webpages, like animations, transitions, backgrounds, etc.</p>
+      <h3>Here is an example of my HTML code</h3>
+      <pre>
+        <code id="htmlExample" lang="sh"></code>
+      </pre>
+      <h3>We actually used a CSS library called Pico, so I have no CSS code, but we imported the code through JS</h3>
+      <pre>
+        <code id="cssExample" lang="sh"></code>
+      </pre>
+      <h3>Here is an example of my JS code</h3>
+      <pre>
+        <code id="jsExample" lang="sh"></code>
+      </pre>
+      <h3>License</h3>
+      <h4>APCSP Portfolio © 2023 by Matt Pekkala is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">CC BY-SA 4.0</h4>
+    </main>
+    
+      
+      
+  </body>
+</html>
