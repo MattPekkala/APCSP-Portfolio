@@ -26,6 +26,15 @@ document.querySelector('#jsExample').textContent = jsExample;
 import mashExampleOne from './code-fragments/mashExampleOne.sh?raw'
 document.querySelector('#mashExampleOne').textContent = mashExampleOne;
 
+import mashExampleTwo from './code-fragments/mashExampleTwo.sh?raw'
+document.querySelector('#mashExampleTwo').textContent = mashExampleTwo;
+
+import mashExampleThree from './code-fragments/mashExampleThree.sh?raw'
+document.querySelector('#mashExampleThree').textContent = mashExampleThree;
+
+import mashExampleFour from './code-fragments/mashExampleFour.sh?raw'
+document.querySelector('#mashExampleFour').textContent = mashExampleFour;
+
 // A code highlighter
 import hljs from 'highlight.js'
 // You can check the folder for other themes!
