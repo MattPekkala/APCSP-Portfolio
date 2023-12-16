@@ -110,6 +110,25 @@ My program allows the user to guess a phrase which has been picked from a list i
         <li>Adding in instructions to be as intuitive as possible</li>
         <li>Adding in the phrases and hints to go along with the phrases</li>
       </ul>
+      <h3>Code Examples</h3>
+      <h4>Code Example 1</h4>
+      <h5>Principles in this concept</h5>
+      <div class="requirements" style="columns: 2; white-space: nowwrap; pointer-events: none;">
+        <div><input type="checkbox"> Correcting Errors</div>
+        <div><input type="checkbox" checked> Variables and Assignments</div>
+        <div><input type="checkbox" checked> Strings</div>
+        <div><input type="checkbox" checked> Lists</div>
+        <div><input type="checkbox"> Iteration</div>
+        <div><input type="checkbox" checked> Procedures</div>
+        <div><input type="checkbox" checked> State</div>
+        <div><input type="checkbox"> Callbacks</div>
+      </div>
+      <h5>What does this code do?</h5>
+      <p>This section of code (1) defines two lists (2) sets a state for them both and a third and (3) calls a previous function</p>
+      <pre><code id="mashExampleOne" lang="sh"></code></pre>
+      <p>
+        The variables phrases and hints are lists which have items which are all strings, they are defined using quotation marks. The react hook useState sets a current state for the variables phrases, hints, and ans, so that when the user starts guessing, these functions can update. In setting a useState to ans, the function getEmptyAnswer is called with the parameter of phrase, and the value it returns is an array of empty strings for each unique letter in the phrase.
+      </p>
       
       <h3>License</h3>
       <h4>APCSP Portfolio © 2023 by Matt Pekkala is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">CC BY-SA 4.0</h4>

@@ -23,6 +23,9 @@ document.querySelector('#cssExample').textContent = cssExample;
 import jsExample from './code-fragments/jsExample.sh?raw'
 document.querySelector('#jsExample').textContent = jsExample;
 
+import mashExampleOne from './code-fragments/mashExampleOne.sh?raw'
+document.querySelector('#mashExampleOne').textContent = mashExampleOne;
+
 // A code highlighter
 import hljs from 'highlight.js'
 // You can check the folder for other themes!
