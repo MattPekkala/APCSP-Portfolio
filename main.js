@@ -35,6 +35,9 @@ document.querySelector('#mashExampleThree').textContent = mashExampleThree;
 import mashExampleFour from './code-fragments/mashExampleFour.sh?raw'
 document.querySelector('#mashExampleFour').textContent = mashExampleFour;
 
+import imageFilterExample from './code-fragments/imageFilterExample.sh?raw'
+document.querySelector('#imageFilterExample').textContent = imageFilterExample;
+
 // A code highlighter
 import hljs from 'highlight.js'
 // You can check the folder for other themes!

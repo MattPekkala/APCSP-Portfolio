@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>APCSP Portfolio</title>
-    <script type="module" crossorigin src="/assets/index-e9930b90.js"></script>
+    <script type="module" crossorigin src="/assets/index-8b330c6d.js"></script>
     <link rel="stylesheet" href="/assets/index-3225629e.css">
   </head>
   <body>
@@ -55,6 +55,9 @@
           <li>
             <a href="#portfolio">APCSP Portfolio</a>
           </li>
+          <li>
+            <a href="#mash">MASH-Like Game</a>
+          </li>
         </ul>
       </nav>
       
@@ -88,6 +91,100 @@
       <pre>
         <code id="jsExample" lang="sh"></code>
       </pre>
+
+      <h4 id ="mash">MASH-Like Game</h4>
+      <h3>Working Game</h3>
+      <a href ="https://cryptogram-game.netlify.app/">Published Game</a>
+      <h3>Source Code</h3>
+      <a href ="https://github.com/MattPekkala/mash-like-game-MattPekkala">GitHub Repository</a>
+      <h3>Function of my program</h3>
+      <p>
+My program allows the user to guess a phrase which has been picked from a list in order. The guesses are by letter in the phrase, and each time the user guesses a letter, the line Wrong guess? will update to say yes or no if the guess was wrong or right. When the user has guessed every letter, the line Complete guess? will update to yes. Initially, the user is given a hint about what the phrase is, a list of numbers which equals the phrase but each letter is replaced with a number, a series of input boxes for each unique letter, and a list of question marks for the phrase that updates to show the guessed letters as the user makes guesses. 
+      </p>
+      <h3>Design Process</h3>
+      <p>I broke my design into steps, which include:</p>
+      <ul>
+        <li>Representing the phrases with a list of numbers, with one number per unique letter</li>
+        <li>Adding one textbox per unique letter</li>
+        <li>Adding a line that represents what has been guessed so far</li>
+        <li>Implementing logic to know if the guess is correct or not, as well as complete or not</li>
+        <li>Implementing a Next Phrase button which clears everything and goes to the next phrase to guess</li>
+        <li>Adding in instructions to be as intuitive as possible</li>
+        <li>Adding in the phrases and hints to go along with the phrases</li>
+      </ul>
+      <h3>Code Examples</h3>
+      <h4>Code Example 1</h4>
+      <h5>Principles in this Example</h5>
+      <div class="requirements" style="columns: 2; white-space: nowwrap; pointer-events: none;">
+        <div><input type="checkbox"> Correcting Errors</div>
+        <div><input type="checkbox" checked> Variables and Assignments</div>
+        <div><input type="checkbox" checked> Strings</div>
+        <div><input type="checkbox" checked> Lists</div>
+        <div><input type="checkbox"> Iteration</div>
+        <div><input type="checkbox" checked> Procedures</div>
+        <div><input type="checkbox" checked> State</div>
+        <div><input type="checkbox"> Callbacks</div>
+      </div>
+      <h5>What does this code do?</h5>
+      <p>This section of code (1) defines two lists (2) sets a state for them both and a third and (3) calls a previous function</p>
+      <pre><code id="mashExampleOne" lang="sh"></code></pre>
+      <h5>Explanations</h5>
+      <p>
+        The variables phrases and hints are lists which have items which are all strings, they are defined using quotation marks. The react hook useState sets a current state for the variables phrases, hints, and ans, so that when the user starts guessing, these functions can update. In setting a useState to ans, the function getEmptyAnswer is called with the parameter of phrase, and the value it returns is an array of empty strings for each unique letter in the phrase.
+      </p>
+      <h4>Code Example 2</h4>
+      <h5>Principles in this Example</h5>
+      <div class="requirements" style="columns: 2; white-space: nowwrap; pointer-events: none;">
+        <div><input type="checkbox"> Correcting Errors</div>
+        <div><input type="checkbox" checked> Variables and Assignments</div>
+        <div><input type="checkbox"> Strings</div>
+        <div><input type="checkbox"> Lists</div>
+        <div><input type="checkbox"> Iteration</div>
+        <div><input type="checkbox" checked> Procedures</div>
+        <div><input type="checkbox"> State</div>
+        <div><input type="checkbox" checked> Callbacks</div>
+      </div>
+      <h5>What does this code do?</h5>
+      <p>This section of code (1) defines a new function (2) changes two variables and (3) calls back three functions while changing the same two variables again</p>
+      <pre><code id="mashExampleTwo" lang="sh"></code></pre>
+      <h5>Explanations</h5>
+      <p>
+        The new function newPhrase is dependent on the new functions nextPhrase and nextHint. These new functions take the lists phrases and hints, and go to the next string in each list by adding one to the index of phrase and hint in their respective lists. Then setPhrase and setHint update the state of phrase and hint to be the next phrase and next hint as defined in nextPhrase and nextHint. Then setAns updates the state of the variable ans by calling back the function getEmptyAnswer with the parameter of nextPhrase, making ans an array of empty strings for each unique letter in the next phrase, defined by nextPhrase.
+      </p>
+      <h4>Code Example 3</h4>
+      <h5>Principles in this Example</h5>
+      <div class="requirements" style="columns: 2; white-space: nowwrap; pointer-events: none;">
+        <div><input type="checkbox"> Correcting Errors</div>
+        <div><input type="checkbox" checked> Variables and Assignments</div>
+        <div><input type="checkbox"> Strings</div>
+        <div><input type="checkbox"> Lists</div>
+        <div><input type="checkbox" checked> Iteration</div>
+        <div><input type="checkbox" checked> Procedures</div>
+        <div><input type="checkbox"> State</div>
+        <div><input type="checkbox" checked> Callbacks</div>
+      </div>
+      <h5>What does this code do?</h5>
+      <p>This section of code (1) declares a function (2) calls a variable with a parameter (3) declares another variable which calls back a function and (4) uses "map" to repeat a function multiple times</p>
+      <pre><code id="mashExampleThree" lang="sh"></code></pre>
+      <h5>Explanations</h5>
+      <p>The new variable CryptoWord takes the variable "phrase" with the parameter "string" and makes a new variable codeNumbers which calls back the function encrypt of the value of phrase. Then this function returns the variable codeNumbers using "map" which allows the function of codeNumbers to repeat for the entire value of phrase. This would return a list of numbers for each unique letter in the chosen string for phrase.</p>
+      <h4>Code Example 4</h4>
+      <h5>Principles in this Example</h5>
+      <div><input type="checkbox" checked> Correcting Errors</div>
+        <div><input type="checkbox" checked> Variables and Assignments</div>
+        <div><input type="checkbox"> Strings</div>
+        <div><input type="checkbox"> Lists</div>
+        <div><input type="checkbox"> Iteration</div>
+        <div><input type="checkbox" checked> Procedures</div>
+        <div><input type="checkbox"> State</div>
+        <div><input type="checkbox" checked> Callbacks</div>
+      </div>
+      <h5>What does this code do?</h5>
+      <p>This section of code (1) creates elements for the functions CryptoGuess and CryptoWord (2) calls a variable with a set value and (3) calls back to a function in a third new element</p>
+      <pre><code id="mashExampleFour" lang="sh"></code></pre>
+      <h5>Explanations</h5>
+      <p>The function CryptoGuess is returned with the value of phrase, and the function answer is set to ans. CryptoWord is also given the value of phrase. A new element for a button is created which calls back the function newPhrase to go to the next phrase. I was having a problem before where the amount of input boxes for every phrase would be equal to the amount needed for the first phrase. This was becase I set CryptoGuess and CryptoWord to just be a string, which was the first phrase. I solved this by setting both of these values to the value of phrase, then setting up a useState function for phrase, in addition to the logic to go to the next phrase with nextPhrase.</p>
+
       <h3>License</h3>
       <h4>APCSP Portfolio © 2023 by Matt Pekkala is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">CC BY-SA 4.0</h4>
     </main>
