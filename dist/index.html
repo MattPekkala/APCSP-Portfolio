@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>APCSP Portfolio</title>
-    <script type="module" crossorigin src="/assets/index-8b330c6d.js"></script>
+    <script type="module" crossorigin src="/assets/index-d07a2433.js"></script>
     <link rel="stylesheet" href="/assets/index-3225629e.css">
   </head>
   <body>
@@ -57,6 +57,9 @@
           </li>
           <li>
             <a href="#mash">MASH-Like Game</a>
+          </li>
+          <li>
+            <a href="#filter">Image Filter Project</a>
           </li>
         </ul>
       </nav>
@@ -184,7 +187,16 @@ My program allows the user to guess a phrase which has been picked from a list i
       <pre><code id="mashExampleFour" lang="sh"></code></pre>
       <h5>Explanations</h5>
       <p>The function CryptoGuess is returned with the value of phrase, and the function answer is set to ans. CryptoWord is also given the value of phrase. A new element for a button is created which calls back the function newPhrase to go to the next phrase. I was having a problem before where the amount of input boxes for every phrase would be equal to the amount needed for the first phrase. This was becase I set CryptoGuess and CryptoWord to just be a string, which was the first phrase. I solved this by setting both of these values to the value of phrase, then setting up a useState function for phrase, in addition to the logic to go to the next phrase with nextPhrase.</p>
-
+      
+      <h4 id ="#filter">Image Filter Project</h4>
+      <a href ="https://mattpekkalaimagefilters.netlify.app/">Published Site</a>
+      <a href ="https://github.com/IACS-CS/image-filters-MattPekkala">GitHub Repository</a>
+      <h3>Custom Filter</h3>
+      <p>My filter <q>Afternoon Lighting</q> takes the image given, and makes it look like the afternoon, when it is darker and the sun starts to glare and make everything look more yellow. I made the options darknessLevel and solarGlowLevel, which allowed their values to be between a range of numbers that the user would select depending on how dark and yellow they want the image to become. The darknessLevel option takes the index of every pixel element in the image, in RGBA color values Red, Green, Blue, and Alpha, and says that if the index of the element is not alpha, to subtract the value of darknessLevel from the value of that element, which darkens the pixel and the image overall. The solarGlowLevel option takes the current red, green, and blue values of a pixel, and asks if their values are greater than 300. If they are, this means they are pretty bright, and the value of solarGlowLevel will be added to the red value, a quarter of it will be added to the green value, and it will be subracted from the blue value. This will make those bright pixels take on an overall more yellow tone based on the value of solarGlowLevel.</p>
+      <h3>Code Example</h3>
+      <pre><code id="imageFilterExample" lang="sh"></code></pre>
+      <h3>Function</h3>
+      What this option solarGlowLevel does is it takes the index of each element in the pixels array, and says that the red index is 0 in the element. It then declares the green index as 1 and the blue index as 2. Then it creates a current state for the three color indexes, redValue, greenValue, and blueValue. After that it uses an if statement saying that if the sum of these three color values is greater than 300, to do the following: Add the value of solarGlowLevel to the red value, add a quarter of solarGlowLevel to the green value, and subtract the solarGlowLevel from the blue value. This makes the pixels in the image where the sum of the RGB values is greater that 300 more yellow, because they are the brightest pixels in the image. This is supposed to give the effect of the Sun later in the day when it turns everything more yellow.
       <h3>License</h3>
       <h4>APCSP Portfolio © 2023 by Matt Pekkala is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">CC BY-SA 4.0</h4>
     </main>
